@@ -1,0 +1,61 @@
+{
+  "name": "@spellbound/react",
+  "version": "0.0.1",
+  "description": "React bindings for Spellbound spell and grammar checking",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "dependencies": {
+    "@spellbound/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.1.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0",
+    "vitest": "^1.1.0"
+  },
+  "keywords": [
+    "spellcheck",
+    "react",
+    "grammar",
+    "spell-checker",
+    "hooks"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spellbound/spellbound.git",
+    "directory": "packages/react"
+  }
+}

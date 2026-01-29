@@ -1,0 +1,69 @@
+NOTICE
+
+Spellbound
+Copyright (c) 2026 Spellbound Contributors
+
+This product includes software and data developed by third parties.
+
+================================================================================
+SCOWL (Spell Checker Oriented Word Lists)
+================================================================================
+
+The dictionary data in @spellbound/dict-en-us is derived from SCOWL.
+
+Copyright (c) 2000-2019 Kevin Atkinson
+
+Permission to use, copy, modify, distribute and sell these word lists, the
+associated scripts, the output created from the scripts, and its documentation
+for any purpose is hereby granted without fee, provided that the above
+copyright notice appears in all copies and that both that copyright notice
+and this permission notice appear in supporting documentation. Kevin Atkinson
+makes no representations about the suitability of this array for any purpose.
+It is provided "as is" without express or implied warranty.
+
+Source: http://wordlist.aspell.net/
+
+================================================================================
+LanguageTool Grammar Rules
+================================================================================
+
+Some grammar rules in @spellbound/core are derived from LanguageTool.
+
+LanguageTool is licensed under the GNU Lesser General Public License (LGPL) 
+version 2.1 or later.
+
+Copyright (C) 2005-2024 Daniel Naber, Marcin Miłkowski, and the LanguageTool 
+contributors.
+
+The derived rules have been converted from LanguageTool's XML format to 
+TypeScript and are used under the terms of LGPL 2.1. The original rules can
+be found at: https://github.com/languagetool-org/languagetool
+
+As required by LGPL 2.1:
+- The source code of the derived rules is available in this repository
+- You may obtain the original LanguageTool source code from:
+  https://github.com/languagetool-org/languagetool
+
+For the full text of LGPL 2.1, see: 
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+
+================================================================================
+Word Frequency Data
+================================================================================
+
+Word frequency data is estimated from publicly available sources including:
+- Google Books Ngrams (public domain / fair use)
+- COCA (Corpus of Contemporary American English) frequency patterns
+
+================================================================================
+Other Acknowledgments
+================================================================================
+
+This project was inspired by and learned from:
+
+- Hunspell (https://hunspell.github.io/) - The most widely used spell checker
+- Write Good (https://github.com/btford/write-good) - MIT licensed
+- Grammarly - For proving that good writing tools can be built
+- The open source community for continuous improvements in NLP tools
+
+================================================================================

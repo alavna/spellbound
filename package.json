@@ -1,0 +1,63 @@
+{
+  "name": "spellbound",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Privacy-first, offline spell checker and grammar checker library",
+  "keywords": [
+    "spell-checker",
+    "grammar-checker",
+    "typescript",
+    "react",
+    "offline",
+    "privacy",
+    "nlp"
+  ],
+  "homepage": "https://github.com/yourusername/spellbound#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/spellbound/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/spellbound.git"
+  },
+  "license": "MIT",
+  "author": "Spellbound Contributors",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "scan-rules": "npx ts-node scripts/scan-broken-rules.ts",
+    "fix-rules": "npx ts-node scripts/fix-broken-rules.ts",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.1.0",
+    "tsup": "^8.0.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "xml2js": "^0.6.2"
+  },
+  "packageManager": "pnpm@8.11.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
