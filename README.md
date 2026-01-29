@@ -8,7 +8,7 @@ A privacy-first, offline-capable spell checker and grammar checker for JavaScrip
 - ✅ **No external API calls** - Your data stays private
 - ✅ **Offline support** - Works without internet connection
 - ✅ **Comprehensive dictionary** - 276,830 words with frequency data
-- ✅ **50+ grammar rules** - Covers common writing mistakes
+- ✅ **1,800+ grammar rules** - Extensive coverage of writing mistakes
 - ✅ **Extensible** - Add custom words and grammar rules
 - ✅ **TypeScript-first** - Full type safety
 - ✅ **Framework agnostic** - Core library works anywhere
@@ -260,15 +260,13 @@ const dictManager = createDictionaryManager({
 
 ## Built-in Grammar Rules
 
-Spellbound includes 50+ grammar rules covering:
+Spellbound includes **1,800+ grammar rules** covering:
 
-- **Capitalization**: Sentence starts, proper nouns, "I"
-- **Punctuation**: Spacing, double punctuation, quotes
-- **Common Mistakes**: Their/they're/there, your/you're, its/it's
-- **Repetition**: Repeated words, redundant phrases
-- **Articles**: A/an usage
-- **Agreement**: Subject-verb agreement
-- **Typography**: Proper dashes, quotes, ellipses
+- **Grammar** (1,562 rules): Comprehensive grammar checking including verb forms, tenses, word order, and more
+- **Style** (210 rules): Writing style improvements, wordiness, clarity suggestions
+- **Compounds** (27 rules): Hyphenation and compound word rules
+- **Confusion Sets** (26 rules): Commonly confused words (their/they're/there, your/you're, etc.)
+- **Built-in** (7 rules): Capitalization, punctuation, articles, repetition, agreement, typography
 
 ## Browser Support
 

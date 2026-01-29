@@ -363,12 +363,12 @@ The main class for grammar checking text.
 ```typescript
 import { createGrammarChecker, builtInRules, importedRules } from '@spellbound/core';
 
-// With built-in rules only (~50 rules)
+// With built-in rules only (7 core rules)
 const grammarChecker = createGrammarChecker({
   rules: builtInRules,
 });
 
-// With all imported rules (14,663 rules) - larger bundle
+// With all imported rules (1,800+ rules) - larger bundle
 const grammarCheckerFull = createGrammarChecker({
   rules: [...builtInRules, ...importedRules],
 });
@@ -1209,19 +1209,15 @@ interface PersistedRuleSettings {
 
 ## Built-in Grammar Rules
 
-The library includes 50+ handcrafted built-in rules plus 14,663 imported LanguageTool rules.
+The library includes **1,800+ grammar rules** total:
 
-### Built-in Rule Categories
-
-| Category            | Examples                            |
-| ------------------- | ----------------------------------- |
-| **Capitalization**  | Sentence start caps, proper nouns   |
-| **Punctuation**     | Double spaces, missing periods      |
-| **Common Mistakes** | would of → would have, alot → a lot |
-| **Repetition**      | the the, repeated words             |
-| **Articles**        | a vs an (a apple → an apple)        |
-| **Agreement**       | Subject-verb agreement              |
-| **Typography**      | Straight quotes → curly quotes      |
+| Category               | Count | Description                                      |
+| ---------------------- | ----- | ------------------------------------------------ |
+| **Grammar**            | 1,562 | Verb forms, tenses, word order, common mistakes  |
+| **Style**              | 210   | Writing clarity, wordiness, formality            |
+| **Compounds**          | 27    | Hyphenation and compound word rules              |
+| **Confusion Sets**     | 26    | Commonly confused words (their/they're, etc.)    |
+| **Built-in Core**      | 7     | Capitalization, punctuation, articles, agreement |
 
 ### Using Specific Rule Categories
 

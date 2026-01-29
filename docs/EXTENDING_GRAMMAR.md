@@ -144,12 +144,12 @@ import { importedRules } from '../rules/imported'; // Add this
 export function createGrammarChecker(options = {}) {
   const registry = new RuleRegistry();
 
-  // Register built-in rules (50+)
+  // Register built-in rules (7 core rules)
   for (const rule of builtInRules) {
     registry.register(rule);
   }
 
-  // Register imported rules (50+, or thousands more!)
+  // Register imported rules (1,800+ rules)
   for (const rule of importedRules) {
     registry.register(rule);
   }
@@ -372,11 +372,11 @@ Some LanguageTool rules use POS tagging (part of speech). These need additional 
 
 ## Summary
 
-**Before:** 50 built-in rules  
-**After:** 5,000+ rules from LanguageTool  
+**Before:** 7 core built-in rules  
+**After:** 1,800+ rules (including LanguageTool imports)  
 **Coverage:** Professional-grade grammar checking  
 **Cost:** Free & open source  
-**License:** LGPL 2.1 (compatible)  
-**Effort:** 5 minutes to set up
+**License:** LGPL 2.1 (compatible with MIT)  
+**Effort:** Already included!
 
 Ready to import? Run the commands above!

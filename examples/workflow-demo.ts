@@ -134,7 +134,7 @@ errors.forEach((error) => {
 // Grammar checking is RULE-BASED and independent of the dictionary:
 //
 // 1. PATTERN MATCHING:
-//    - Text is matched against 50+ grammar rules
+//    - Text is matched against 1,800+ grammar rules
 //    - Rules use regex patterns and token sequences
 //    - Example rule: "their going" -> "they're going"
 //
